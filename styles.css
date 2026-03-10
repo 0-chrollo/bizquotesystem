@@ -30,7 +30,7 @@ nav {
     color: #013456;
     display: flex;
     align-items: left;
-   
+   font-size: 0.85rem;
     margin-top: 0.50rem;
     align-self: flex-start;
     text-decoration: none;
