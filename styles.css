@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+nav {
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(16, 51, 71);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+}
+.logo {
+    color: #ffffff;
+    display: flex;
+    align-items: left;
+    
+    margin-top: 0.50rem;
+    align-self: flex-start;
+    text-decoration: none;
+    height: 28px;
+}
+
+.logo img {
+    height:47px;
+    width: 55px;
+               
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #667eea;
+    transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #667eea;
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.burger span {
+    width: 20px;
+    height: 2.5px;
+    background: #ffffff;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+}
+
+/* Burger Animation */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-menu {
+        color: #fff;
+        border-top: 1px solid  rgb(255, 136, 18);
+        border-bottom: 2px solid rgb(255, 136, 18);
+        
+        position: fixed;
+        left: 0;
+        top: 50px;
+        flex-direction: column;
+        background:rgb(16, 51, 71);
+        width: 100%;
+        text-align: center;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        max-height: 400px;
+    }
+
+    .nav-menu li {
+        color: #fff;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu li a::after {
+        display: none;
+
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .content p {
+        font-size: 1rem;
+        color: #fff;
+    }
+}
