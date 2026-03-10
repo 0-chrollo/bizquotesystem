@@ -10,7 +10,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgb(225, 225, 225);
+    background: rgb(249, 249, 249);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(22, 22, 22, 0.309);
     z-index: 1000;
