@@ -10,9 +10,9 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgb(16, 51, 71);
+    background: rgb(225, 225, 225);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(22, 22, 22, 0.309);
     z-index: 1000;
 }
 
@@ -27,10 +27,10 @@ nav {
     
 }
 .logo {
-    color: #ffffff;
+    color: #013456;
     display: flex;
     align-items: left;
-    
+   
     margin-top: 0.50rem;
     align-self: flex-start;
     text-decoration: none;
@@ -88,7 +88,7 @@ nav {
 .burger span {
     width: 20px;
     height: 2.5px;
-    background: #ffffff;
+    background: #013456;
     border-radius: 0px;
     transition: all 0.3s ease;
 }
@@ -116,8 +116,8 @@ nav {
 
     .nav-menu {
         color: #fff;
-        border-top: 1px solid  rgb(255, 136, 18);
-        border-bottom: 2px solid rgb(255, 136, 18);
+        border-top: 1px solid #005e9c;
+        border-bottom: 2px solid #005e9c;
         
         position: fixed;
         left: 0;
